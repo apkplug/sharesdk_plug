@@ -65,6 +65,7 @@ dependencies {
     compile files('libs/ShareSDK-Yixin-Moments-2.6.3.jar')
     compile files('libs/ShareSDK-YouDao-2.6.3.jar')
     compile files('libs/libapshare.jar')
-    provided files('libs/osgi2.0.0.jar')
-    provided files('libs/componentsdkV11.jar')
+    provided files('libs/osgi2.9.0.jar')
+    provided files('libs/componentsdkV12.jar')
+    compile files('libs/ShareSDK-Socialization-1.1.0.jar')
 }
