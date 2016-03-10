@@ -68,4 +68,5 @@ dependencies {
     provided files('libs/osgi2.9.0.jar')
     provided files('libs/componentsdkV12.jar')
     compile files('libs/ShareSDK-Socialization-1.1.0.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
 }

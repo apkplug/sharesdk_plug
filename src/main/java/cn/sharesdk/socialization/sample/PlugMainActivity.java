@@ -1,16 +1,15 @@
 package cn.sharesdk.socialization.sample;
 
-import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.onekeyshare.OnekeyShare;
-import cn.sharesdk.socialization.SocializationCustomPlatform.UserGender;
-import cn.sharesdk.socialization.SocializationCustomPlatform.UserVerifyType;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import cn.sharesdk.demo.R;
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.onekeyshare.OnekeyShare;
 
 public class PlugMainActivity extends Activity {
 	

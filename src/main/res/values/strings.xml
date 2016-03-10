@@ -88,4 +88,18 @@
   	<string name="qrcode_type_uri">自定义模式</string>
   	<string name="qrcode_generate">生成二维码</string>
   	<string name="qrcode_hint">请输入二维码的内容</string>
+
+
+	<integer name="app_version_code">3</integer>
+	<string name="app_version">1.0.2</string>
+	<string name="proj_name">ShareSDK Socialization</string>
+	<string name="sm_item_comment_like">评论与赞</string>
+	<string name="comment_like_id">ssdk20131220190000</string>
+	<string name="comment_like_title">ShareSDK“评论与赞”模块发布</string>
+	<string name="comment_like_publich_time">2013-12-20 19:00</string>
+	<string name="comment_like_author">ShareSDK</string>
+	<string name="comment_like_comment_list">跟帖</string>
+	<string name="like_success">点赞成功</string>
+	<string name="like_fail">点赞失败</string>
+	<string name="myplatform">佣兵团</string>
 </resources>

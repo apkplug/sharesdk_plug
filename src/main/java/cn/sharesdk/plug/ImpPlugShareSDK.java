@@ -9,7 +9,6 @@ import com.apkplug.component.sharesdk.PlugTopicTitle;
 
 import cn.sharesdk.demo.R;
 import cn.sharesdk.framework.Platform;
-import cn.sharesdk.framework.Platform.ShareParams;
 import cn.sharesdk.onekeyshare.OnekeyShare;
 import cn.sharesdk.onekeyshare.ShareContentCustomizeCallback;
 import cn.sharesdk.socialization.CommentListPage;
@@ -17,7 +16,11 @@ import cn.sharesdk.socialization.QuickCommentBar;
 import cn.sharesdk.socialization.component.TopicTitle;
 
 
-public class ImpPlugShareSDK implements PlugShareSDK{
+/**
+ * Created by qinfeng on 15/10/8.
+ */
+public class ImpPlugShareSDK extends PlugShareSDK {
+
 	private Context context=null;
 	public ImpPlugShareSDK(Context context){
 		this.context=context;
@@ -53,13 +56,19 @@ public class ImpPlugShareSDK implements PlugShareSDK{
 		page.setOnekeyShare(initOnekeyShare(arg1));
 		page.show(context, null);
 	}
+
+	@Override
+	public int versionInPlug() {
+		return 100;
+	}
+
 	@Override
 	public int version() {
-		
+
 		return 300;
 	}
 
-	
+
 	private OnekeyShare initOnekeyShare(PlugShareInfo info) {
 		OnekeyShare oks = new OnekeyShare();
 		oks.setAddress(info.getAddress());
@@ -81,7 +90,7 @@ public class ImpPlugShareSDK implements PlugShareSDK{
 			oks.disableSSOWhenAuthorize();
 		}
 		oks.setShareContentCustomizeCallback(new ShareContentCustomizeCallback() {
-			public void onShare(Platform platform, ShareParams paramsToShare) {
+			public void onShare(Platform platform, Platform.ShareParams paramsToShare) {
 				// 改写twitter分享内容中的text字段，否则会超长，
 				// 因为twitter会将图片地址当作文本的一部分去计算长度
 				if ("Twitter".equals(platform.getName())) {
@@ -91,5 +100,4 @@ public class ImpPlugShareSDK implements PlugShareSDK{
 		});
 		return oks;
 	}
-	
 }

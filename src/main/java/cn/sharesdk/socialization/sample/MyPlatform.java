@@ -1,10 +1,9 @@
 package cn.sharesdk.socialization.sample;
 
-import cn.sharesdk.socialization.SocializationCustomPlatform;
-import cn.sharesdk.socialization.sample.R;
-import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
+
+import cn.sharesdk.demo.R;
+import cn.sharesdk.socialization.SocializationCustomPlatform;
 
 /**
  * 自定义平台例子
